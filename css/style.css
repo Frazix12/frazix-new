@@ -5,6 +5,7 @@
   --bg-secondary: rgb(10, 8, 15);
   --transition-speed: 600ms;
   --primary: oklch(0.721502 0.144777 292.879132 / 1);
+  --border-radius: 4px;
 }
 
 body {
@@ -45,7 +46,7 @@ body {
           position: absolute;
           top: -70px; /* Adjust the top value to position the image above the element */
           left: 50%;
-          border-radius: 4px;
+          border-radius: var(--border-radius);
           transform: translateX(-50%);
           width: 60px; /* Set the desired width of the image */
           height: 60px; /* Set the desired height of the image */
@@ -105,7 +106,7 @@ body {
         position: absolute;
         top: -70px; /* Adjust the top value to position the image above the element */
         left: 50%;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         transform: translateX(-50%);
         width: 60px; /* Set the desired width of the image */
         height: 60px; /* Set the desired height of the image */
@@ -129,7 +130,7 @@ body {
         position: absolute;
         top: -70px; /* Adjust the top value to position the image above the element */
         left: 50%;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         transform: translateX(-50%);
         width: 60px; /* Set the desired width of the image */
         height: 60px; /* Set the desired height of the image */
@@ -153,7 +154,7 @@ body {
         position: absolute;
         top: -70px; /* Adjust the top value to position the image above the element */
         left: 50%;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         transform: translateX(-50%);
         width: 60px; /* Set the desired width of the image */
         height: 60px; /* Set the desired height of the image */
@@ -190,7 +191,7 @@ body {
         width: 5.5rem;
         height: 2.5rem;
         border: none;
-        border-radius: 4px;
+        border-radius: var(--border-radius);
         background: var(--primary);
         outline: none;
         margin: 7px;
@@ -207,7 +208,15 @@ body {
         }
       }
     }
-    .stuff {
+    .stuffs {
+      .item {
+        margin: 15px 0 15px;
+        width: 100%;
+        height: 4.5rem;
+        border-radius: var(--border-radius);
+        background: rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+      }
     }
   }
 }
